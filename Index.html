@@ -4,9 +4,22 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Namburi Vivek — Portfolio</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="is-loading">
+
+<div id="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-signature">NV</div>
+    <div class="preloader-line"><span class="preloader-dot"></span></div>
+    <div class="preloader-text">Loading portfolio...</div>
+  </div>
+</div>
+
 <div class="shell">
 
   <aside class="sidebar">
@@ -41,7 +54,7 @@
     </div>
 
     <div class="spacer"></div>
-    <button class="btn-resume" id="sidebar-resume-btn">View resume →</button>
+    <a class="btn-resume" id="sidebar-resume-btn" href="resume.pdf" download="Namburi_Vivek_Resume.pdf">Download resume →</a>
   </aside>
 
   <main>
@@ -73,7 +86,7 @@
           <div class="icon-chip" title="C"><img src="https://cdn.simpleicons.org/c/A8B9CC" alt="C"></div>
           <div class="icon-chip" title="JavaScript"><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript"></div>
           <div class="icon-chip" title="HTML5"><img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5"></div>
-          <div class="icon-chip" title="CSS3"><img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS3"></div>
+          <div class="icon-chip" title="CSS3"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"></div>
           <div class="icon-chip" title="React"><img src="https://cdn.simpleicons.org/react/61DAFB" alt="React"></div>
           <div class="icon-chip" title="Node.js"><img src="https://cdn.simpleicons.org/nodedotjs/339933" alt="Node.js"></div>
           <div class="icon-chip" title="Express.js"><img src="https://cdn.simpleicons.org/express/E7ECF2" alt="Express.js"></div>
@@ -82,7 +95,7 @@
           <div class="icon-chip" title="MongoDB"><img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB"></div>
           <div class="icon-chip" title="Git"><img src="https://cdn.simpleicons.org/git/F05032" alt="Git"></div>
           <div class="icon-chip" title="GitHub"><img src="https://cdn.simpleicons.org/github/E7ECF2" alt="GitHub"></div>
-          <div class="icon-chip" title="VS Code"><img src="https://cdn.simpleicons.org/visualstudiocode/007ACC" alt="VS Code"></div>
+          <div class="icon-chip" title="VS Code"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code"></div>
           <div class="icon-chip" title="Arduino"><img src="https://cdn.simpleicons.org/arduino/00979D" alt="Arduino"></div>
         </div>
       </section>
@@ -192,7 +205,7 @@
           <span class="when">MAR 2026 – JUN 2026</span>
           <p>Full-stack food ordering platform with a product catalog, cart, and order management, built with a component-based React front end.</p>
           <div class="stack"><span>React</span><span>Node.js</span><span>MySQL</span></div>
-          <div class="link-row"><a href="https://github.com/NamburiVivek/Ofoods26-Ecommerce" target="_blank" rel="noopener">GitHub →</a></div>
+          <div class="link-row"><a href="https://ofoods.co.in" target="_blank" rel="noopener">Live site →</a><a href="https://github.com/NamburiVivek/Ofoods26-Ecommerce" target="_blank" rel="noopener">GitHub →</a></div>
         </div>
 
         <div class="work-card" data-category="software">
@@ -248,7 +261,7 @@
       <div class="title-rule"></div>
       <p class="lede" style="margin-bottom:28px;">Open to internships and collaborations in full-stack development and embedded systems.</p>
 
-      <div class="contact-grid">
+      <div class="contact-grid" style="grid-template-columns:1fr;">
         <div>
           <div class="entry" style="margin-bottom:20px;">
             <h3 style="margin-bottom:10px;">Send a message</h3>
@@ -269,12 +282,6 @@
               <p class="form-note">This opens your email app with the message ready to send to viveknamburi95@gmail.com.</p>
             </form>
           </div>
-        </div>
-
-        <div class="map-card">
-          <h3>Based in</h3>
-          <p class="addr">Amrita Vishwa Vidyapeetham<br>Coimbatore, Tamil Nadu, India</p>
-          <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Amrita+Vishwa+Vidyapeetham+Coimbatore" target="_blank" rel="noopener">Open in Maps ↗</a>
         </div>
       </div>
     </section>
