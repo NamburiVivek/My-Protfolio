@@ -350,7 +350,7 @@ section.block h2{ font-size:19px; margin-bottom:16px; font-weight:700; }
     width:16px; height:16px;
     transition:transform .25s ease;
   }
-  .sidebar.collapsed .sidebar-toggle svg{
+  .sidebar:not(.collapsed) .sidebar-toggle svg{
     transform:rotate(180deg);
   }
   .sidebar.collapsed .contact-list,
