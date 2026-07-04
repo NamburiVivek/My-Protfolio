@@ -28,6 +28,18 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     window.addEventListener('load', hidePreloader);
   }
+  // Collapsible profile card (mobile) — tap the chevron to hide/show
+  // email, phone, location, socials, and the resume button, so "About me"
+  // sits higher on small screens without needing to scroll past it.
+  const sidebar = document.querySelector('.sidebar');
+  const sidebarToggle = document.getElementById('sidebar-toggle');
+  if (sidebar && sidebarToggle) {
+    sidebarToggle.addEventListener('click', () => {
+      const isCollapsed = sidebar.classList.toggle('collapsed');
+      sidebarToggle.setAttribute('aria-expanded', String(!isCollapsed));
+    });
+  }
+
   const navButtons = document.querySelectorAll('.topnav button');
   const pages = document.querySelectorAll('.page');
   let isInitialShow = true;
