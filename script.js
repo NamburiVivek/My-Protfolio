@@ -46,20 +46,13 @@ document.addEventListener('DOMContentLoaded', () => {
   function showPage(id) {
     pages.forEach(p => p.classList.toggle('active', p.id === id));
     navButtons.forEach(b => b.classList.toggle('active', b.dataset.target === id));
-    // On the very first call (page load) we don't want to scroll at all —
-    // the page is already at the top and calling scrollIntoView here is
-    // what caused the visible "shift up" right after opening on mobile.
-    // Only scroll into view for actual user-triggered nav clicks afterward.
+    // Just swap which page is visible — no scrolling at all. Scrolling here
+    // (even "instant") caused a visible jump/movement every time a nav
+    // button was clicked, since the sticky topnav and differing page
+    // heights meant the browser had to reposition the viewport.
     if (isInitialShow) {
       isInitialShow = false;
       window.scrollTo(0, 0);
-      return;
-    }
-    const target = document.getElementById(id);
-    if (target) {
-      target.scrollIntoView({ behavior: 'instant', block: 'start' });
-    } else {
-      window.scrollTo({ top: 0, behavior: 'instant' });
     }
   }
   navButtons.forEach(btn => {
