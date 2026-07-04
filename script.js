@@ -30,10 +30,26 @@ document.addEventListener('DOMContentLoaded', () => {
   const navButtons = document.querySelectorAll('.topnav button');
   const pages = document.querySelectorAll('.page');
 
+  // Collapsible profile card (mobile) — tap the chevron to expand/collapse
+  const sidebarToggle = document.getElementById('sidebar-toggle');
+  const sidebarDetails = document.getElementById('sidebar-details');
+  if (sidebarToggle && sidebarDetails) {
+    sidebarToggle.addEventListener('click', () => {
+      const isOpen = sidebarDetails.classList.toggle('open');
+      sidebarToggle.classList.toggle('open', isOpen);
+      sidebarToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+  }
+
   function showPage(id) {
     pages.forEach(p => p.classList.toggle('active', p.id === id));
     navButtons.forEach(b => b.classList.toggle('active', b.dataset.target === id));
-    window.scrollTo({ top: 0, behavior: 'instant' });
+    const target = document.getElementById(id);
+    if (target) {
+      target.scrollIntoView({ behavior: 'instant', block: 'start' });
+    } else {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    }
   }
 
   navButtons.forEach(btn => {
