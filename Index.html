@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Namburi Vivek — Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="shell">
+
+  <aside class="sidebar">
+    <div class="avatar">
+      <img src="my pic.jpeg" alt="Namburi Vivek">
+    </div>
+    <h1 class="name">Namburi Vivek</h1>
+    
+
+    <div class="contact-list">
+      <div class="contact-item">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18v12H3z"/><path d="M3 6l9 7 9-7"/></svg></span>
+        <div><span class="k">Email</span><span class="v"><a href="mailto:viveknamburi95@gmail.com">viveknamburi95@gmail.com</a></span></div>
+      </div>
+      <div class="contact-item">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg></span>
+        <div><span class="k">Phone</span><span class="v"><a href="tel:+919390626483">+91 93906 26483</a></span></div>
+      </div>
+      <div class="contact-item">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+        <div><span class="k">Location</span><span class="v">Coimbatore, India</span></div>
+      </div>
+    </div>
+
+    <div class="social-row">
+      <a href="https://www.linkedin.com/in/namburi-vivek-31a60334a/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.11 20.45H3.56V9h3.55v11.45z"/></svg>
+      </a>
+      <a href="https://github.com/NamburiVivek" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.1.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5.02 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.69 0 3.84-2.35 4.68-4.58 4.93.36.31.68.92.68 1.85v2.75c0 .26.18.57.69.48A10 10 0 0 0 12 2z"/></svg>
+      </a>
+    </div>
+
+    <div class="spacer"></div>
+    <button class="btn-resume" id="sidebar-resume-btn">View resume →</button>
+  </aside>
+
+  <main>
+    <nav class="topnav">
+      <button data-target="about" class="active">About</button>
+      <button data-target="resume">Resume</button>
+      <button data-target="work">Projects</button>
+      <button data-target="contact">Contact</button>
+    </nav>
+
+    <!-- ABOUT -->
+    <section class="page active" id="about">
+      <h2 class="page-title">About me</h2>
+      <div class="title-rule"></div>
+
+      <p class="body-text">I'm a Computer Science Engineering student at Amrita Vishwa Vidyapeetham, Coimbatore, pursuing my B.Tech from 2024 to 2028. I build across the stack — from React interfaces down to the microcontrollers and sensors that give a project a physical presence.</p>
+
+      <p class="body-text">My core stack is React, Node.js, and MySQL/MongoDB for the web side, and Java, C, and Embedded C for the hardware side. I've used that combination to ship an e-commerce platform, a stock-trading simulator with real authentication and transaction logic, a Java desktop reservation system, a cooperative multiplayer map-coloring game, and an Arduino-based robot with obstacle avoidance and Bluetooth control.</p>
+
+      <p class="body-text">That same attention to detail carried into research: I'm the first author of a paper on a portable LiDAR-based perception system for four-wheelers in adverse weather, presented at NEleX 2026, an IEEE Madras Section co-sponsored conference hosted by VIT Vellore.</p>
+
+      <p class="body-text">Outside of coding, I've worked with rural communities through Amrita's Live-in-Labs program, and built discipline and teamwork through the National Cadet Corps and National Service Scheme.</p>
+
+      <section class="block" style="margin-top:38px;">
+        <h2>My Skills</h2>
+        <div class="icon-row">
+          <div class="icon-chip" title="Java"><img src="https://cdn.simpleicons.org/openjdk/E76F00" alt="Java"></div>
+          <div class="icon-chip" title="Python"><img src="https://cdn.simpleicons.org/python/3776AB" alt="Python"></div>
+          <div class="icon-chip" title="C"><img src="https://cdn.simpleicons.org/c/A8B9CC" alt="C"></div>
+          <div class="icon-chip" title="JavaScript"><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript"></div>
+          <div class="icon-chip" title="HTML5"><img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5"></div>
+          <div class="icon-chip" title="CSS3"><img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS3"></div>
+          <div class="icon-chip" title="React"><img src="https://cdn.simpleicons.org/react/61DAFB" alt="React"></div>
+          <div class="icon-chip" title="Node.js"><img src="https://cdn.simpleicons.org/nodedotjs/339933" alt="Node.js"></div>
+          <div class="icon-chip" title="Express.js"><img src="https://cdn.simpleicons.org/express/E7ECF2" alt="Express.js"></div>
+          <div class="icon-chip" title="Bootstrap"><img src="https://cdn.simpleicons.org/bootstrap/7952B3" alt="Bootstrap"></div>
+          <div class="icon-chip" title="MySQL"><img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL"></div>
+          <div class="icon-chip" title="MongoDB"><img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB"></div>
+          <div class="icon-chip" title="Git"><img src="https://cdn.simpleicons.org/git/F05032" alt="Git"></div>
+          <div class="icon-chip" title="GitHub"><img src="https://cdn.simpleicons.org/github/E7ECF2" alt="GitHub"></div>
+          <div class="icon-chip" title="VS Code"><img src="https://cdn.simpleicons.org/visualstudiocode/007ACC" alt="VS Code"></div>
+          <div class="icon-chip" title="Arduino"><img src="https://cdn.simpleicons.org/arduino/00979D" alt="Arduino"></div>
+        </div>
+      </section>
+    </section>
+
+    <!-- RESUME -->
+    <section class="page" id="resume">
+      <h2 class="page-title">Resume</h2>
+      <div class="title-rule"></div>
+
+      <section class="block">
+        <div class="block-header">
+          <span class="block-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
+          <h2>Research Experience</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <span class="badge">FIRST AUTHOR</span>
+            <h3>Paper Presenter — 2nd International Conference on Next Generation Electronics (NEleX 2026)</h3>
+            <div class="org">VIT Vellore · co-sponsored by the IEEE Madras Section</div>
+            <div class="date">FEB 2026</div>
+            <p>Presented "A Portable LiDAR-Based Adverse Weather Perception System for Four-Wheelers with Multi-Stage Denoising." Researched LiDAR-based perception and multi-stage denoising for autonomous vehicle applications.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="block-header">
+          <span class="block-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+          <h2>Activities</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <h3>Live-in-Labs Program</h3>
+            <div class="org">Amrita Vishwa Vidyapeetham</div>
+            <div class="date">ONGOING</div>
+            <p>Engaged with rural communities to understand real-world challenges and contribute to sustainable development through fieldwork, problem analysis, and collaborative solutions.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="block-header">
+          <span class="block-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></svg></span>
+          <h2>Achievements</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <h3>First-authored paper accepted at an IEEE-sponsored conference</h3>
+            <div class="org">NEleX 2026, VIT Vellore</div>
+            <div class="date">2026</div>
+            <p>Research on LiDAR perception for autonomous vehicles accepted and presented at a peer-reviewed international conference in the second year of a bachelor's degree.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="block-header">
+          <span class="block-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+          <h2>Education</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <h3>Amrita Vishwa Vidyapeetham, Coimbatore</h3>
+            <div class="org">B.Tech, Computer Science and Engineering</div>
+            <div class="date">JUL 2024 – APR 2028</div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <h3>Narayana Junior College, Vijayawada</h3>
+            <div class="org">Intermediate — Mathematics, Physics, Chemistry</div>
+            <div class="date">JUN 2022 – APR 2024</div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <h3>Bhashyam High School, Guntur</h3>
+            <div class="org">Secondary Education</div>
+            <div class="date">JUN 2021 – APR 2022</div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- WORK -->
+    <section class="page" id="work">
+      <h2 class="page-title">Projects</h2>
+      <div class="title-rule"></div>
+      <p class="lede" style="margin-bottom:24px;">Six builds spanning web platforms, embedded robotics, and desktop software.</p>
+
+      <div class="filter-row">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="software">Software</button>
+        <button class="filter-btn" data-filter="embedded">Embedded</button>
+      </div>
+
+      <div class="work-grid">
+        <div class="work-card" data-category="web">
+          <span class="tag">Web Development</span>
+          <h3>Ofoods26 — E‑Commerce Platform</h3>
+          <span class="when">MAR 2026 – JUN 2026</span>
+          <p>Full-stack food ordering platform with a product catalog, cart, and order management, built with a component-based React front end.</p>
+          <div class="stack"><span>React</span><span>Node.js</span><span>MySQL</span></div>
+          <div class="link-row"><a href="https://github.com/NamburiVivek/Ofoods26-Ecommerce" target="_blank" rel="noopener">GitHub →</a></div>
+        </div>
+
+        <div class="work-card" data-category="software">
+          <span class="tag">Software</span>
+          <h3>Nova Capital — Stock Portfolio Management</h3>
+          <span class="when">JUN 2025 – OCT 2025</span>
+          <p>Simulated stock trading app with secure authentication, CSRF protection, and buy/sell modules for six companies backed by a normalized database.</p>
+          <div class="stack"><span>MySQL</span><span>Session Auth</span></div>
+          <div class="link-row"><a href="https://github.com/HackstreetBoyzz/Stock-Market-Trading-web-Application" target="_blank" rel="noopener">GitHub →</a></div>
+        </div>
+
+        <div class="work-card" data-category="embedded">
+          <span class="tag">Embedded</span>
+          <h3>Autonomous Robot Navigation System</h3>
+          <span class="when">SEP 2025 – NOV 2025</span>
+          <p>Arduino UNO R4 robot with obstacle avoidance, line following, and a web-based Bluetooth controller for manual driving.</p>
+          <div class="stack"><span>Arduino</span><span>Embedded C</span><span>Bluetooth</span></div>
+          <div class="link-row"><a href="https://github.com/HackstreetBoyzz/Autonomus-Robot-Navigation-System" target="_blank" rel="noopener">GitHub →</a></div>
+        </div>
+
+        <div class="work-card" data-category="software">
+          <span class="tag">Software</span>
+          <h3>Airline Reservation System</h3>
+          <span class="when">JAN 2025 – APR 2025</span>
+          <p>Java Swing desktop app for flight search, booking, cancellation, and payment, built around encapsulation, inheritance, and polymorphism.</p>
+          <div class="stack"><span>Java</span><span>Swing</span><span>OOP</span></div>
+          <div class="link-row"><a href="https://github.com/NamburiVivek/Airline-Reservation-System" target="_blank" rel="noopener">GitHub →</a></div>
+        </div>
+
+        <div class="work-card" data-category="software">
+          <span class="tag">Software</span>
+          <h3>Tatham-Map-Multi-Player</h3>
+          <span class="when">TEAM PROJECT</span>
+          <p>Cooperative two-player map coloring game inspired by Simon Tatham's Map Puzzle, redesigned using graph-based algorithms and constraint satisfaction principles.</p>
+          <div class="stack"><span>Java</span><span>Graph Algorithms</span></div>
+          <div class="link-row"><a href="https://github.com/HackstreetBoyzz/Tatham-Map-Multi-Player" target="_blank" rel="noopener">GitHub →</a></div>
+        </div>
+
+        <div class="work-card" data-category="software">
+          <span class="tag">Software</span>
+          <h3>Personal Finance Tracker</h3>
+          <span class="when">TEAM PROJECT</span>
+          <p>Python interface built with three classmates to log and review personal spending — a first-year pass at usable software.</p>
+          <div class="stack"><span>Python</span></div>
+          <div class="link-row"><a href="https://github.com/NamburiVivek/Personal-Finance-Tracker" target="_blank" rel="noopener">GitHub →</a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="page" id="contact">
+      <h2 class="page-title">Contact</h2>
+      <div class="title-rule"></div>
+      <p class="lede" style="margin-bottom:28px;">Open to internships and collaborations in full-stack development and embedded systems.</p>
+
+      <div class="contact-grid">
+        <div>
+          <div class="entry" style="margin-bottom:20px;">
+            <h3 style="margin-bottom:10px;">Send a message</h3>
+            <form id="contact-form">
+              <div class="form-field">
+                <label for="cf-name">Full name</label>
+                <input type="text" id="cf-name" name="name" required>
+              </div>
+              <div class="form-field">
+                <label for="cf-email">Email address</label>
+                <input type="email" id="cf-email" name="email" required>
+              </div>
+              <div class="form-field">
+                <label for="cf-message">Your message</label>
+                <textarea id="cf-message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Send message</button>
+              <p class="form-note">This opens your email app with the message ready to send to viveknamburi95@gmail.com.</p>
+            </form>
+          </div>
+        </div>
+
+        <div class="map-card">
+          <h3>Based in</h3>
+          <p class="addr">Amrita Vishwa Vidyapeetham<br>Coimbatore, Tamil Nadu, India</p>
+          <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Amrita+Vishwa+Vidyapeetham+Coimbatore" target="_blank" rel="noopener">Open in Maps ↗</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
