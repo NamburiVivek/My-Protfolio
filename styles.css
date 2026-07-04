@@ -55,6 +55,10 @@ button{ font-family:inherit; }
   align-items:center;
   text-align:center;
 }
+.sidebar-toggle{
+  display:none;
+}
+
 .avatar{
   width:110px;
   height:110px;
@@ -325,6 +329,36 @@ section.block h2{ font-size:19px; margin-bottom:16px; font-weight:700; }
   }
   .topnav .nav-icon{ display:block; margin:0 auto; }
   .topnav button.active{ background:none; }
+
+  /* Collapsible profile card — mobile only */
+  .sidebar{ position:relative; }
+  .sidebar-toggle{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:absolute;
+    top:14px; right:14px;
+    width:30px; height:30px;
+    border:1px solid var(--border);
+    background:var(--panel);
+    color:var(--accent);
+    border-radius:8px;
+    cursor:pointer;
+    z-index:2;
+  }
+  .sidebar-toggle svg{
+    width:16px; height:16px;
+    transition:transform .25s ease;
+  }
+  .sidebar.collapsed .sidebar-toggle svg{
+    transform:rotate(180deg);
+  }
+  .sidebar.collapsed .contact-list,
+  .sidebar.collapsed .social-row,
+  .sidebar.collapsed .spacer,
+  .sidebar.collapsed .btn-resume{
+    display:none;
+  }
 }
 
 body.is-loading{ overflow:hidden; }
