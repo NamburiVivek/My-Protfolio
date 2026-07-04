@@ -5,6 +5,28 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   window.scrollTo(0, 0);
 
+  // Preloader — show the signature animation for a minimum time,
+  // then reveal the site once the page has fully loaded.
+  const preloader = document.getElementById('preloader');
+  const MIN_DISPLAY_MS = 2200;
+  const loadStart = Date.now();
+
+  function hidePreloader() {
+    const elapsed = Date.now() - loadStart;
+    const remaining = Math.max(MIN_DISPLAY_MS - elapsed, 0);
+    setTimeout(() => {
+      if (preloader) preloader.classList.add('hidden');
+      document.body.classList.remove('is-loading');
+      setTimeout(() => { if (preloader) preloader.remove(); }, 700);
+    }, remaining);
+  }
+
+  if (document.readyState === 'complete') {
+    hidePreloader();
+  } else {
+    window.addEventListener('load', hidePreloader);
+  }
+
   const navButtons = document.querySelectorAll('.topnav button');
   const pages = document.querySelectorAll('.page');
 
@@ -17,11 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
   navButtons.forEach(btn => {
     btn.addEventListener('click', () => showPage(btn.dataset.target));
   });
-
-  const sidebarResumeBtn = document.getElementById('sidebar-resume-btn');
-  if (sidebarResumeBtn) {
-    sidebarResumeBtn.addEventListener('click', () => showPage('resume'));
-  }
 
   // Always start on the About page — no URL hash is used, so there's
   // nothing for the browser to auto-scroll to on load.
